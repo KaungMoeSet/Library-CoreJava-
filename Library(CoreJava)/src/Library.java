@@ -10,6 +10,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Library extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	static Library lbframe;
 	private JPanel panel;
 
