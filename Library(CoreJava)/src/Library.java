@@ -60,8 +60,7 @@ public class Library extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				LibrarianLogin.main(new String[]{});
 			}		
-		});
-		
+		});		
 		this.add(adminbtn);
 		this.add(lbbtn);
 		this.add(panel);
