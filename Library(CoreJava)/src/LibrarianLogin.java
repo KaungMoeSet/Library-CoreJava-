@@ -60,7 +60,7 @@ public class LibrarianLogin extends JFrame {
 		passField.setBounds(190, 100, 150, 30);
 		
 		loginbtn = new JButton("Login");
-		loginbtn.setBounds(50, 150, 150, 50);
+		loginbtn.setBounds(50, 150, 180, 50);
 		loginbtn.setFont(new Font("Comic Sans",Font.BOLD,18));
 		loginbtn.setFocusable(false);
 		loginbtn.setForeground(Color.WHITE);
