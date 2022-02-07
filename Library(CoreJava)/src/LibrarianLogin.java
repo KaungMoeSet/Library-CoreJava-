@@ -51,13 +51,13 @@ public class LibrarianLogin extends JFrame {
 		namelbl.setBounds(25, 50, 150, 30);
 		namelbl.setFont(new Font("Serif",Font.BOLD,20));		
 		nameField = new JTextField();
-		nameField.setBounds(190, 50, 150, 30);
+		nameField.setBounds(190, 50, 200, 30);
 		
 		passlbl = new JLabel("Enter Password :");
 		passlbl.setBounds(25, 100, 150, 30);
 		passlbl.setFont(new Font("Serif",Font.BOLD,20));	
 		passField = new JPasswordField();
-		passField.setBounds(190, 100, 150, 30);
+		passField.setBounds(190, 100, 200, 30);
 		
 		loginbtn = new JButton("Login");
 		loginbtn.setBounds(50, 150, 180, 50);
@@ -68,7 +68,12 @@ public class LibrarianLogin extends JFrame {
 		loginbtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
+				String name = nameField.getText();
+				String password = String.valueOf(passField.getPassword());
+				if(name == password) {
+					LibrarianSuccess.main(new String[] {});
+					admlgn.dispose();
+				}
 			}
 		});
 		
